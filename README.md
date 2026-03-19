@@ -209,7 +209,7 @@ Wn = 27.5 µm → Id = 200 µA
 ### DC sweap analysis:
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/DC%20sweap%20.png?raw=true)
 ### Transient analysis:
-![Image description](
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/transient%20analysis1.png?raw=true)
 
 ### AC analysis:
 The **bandwidth** of the amplifier represents the range of frequencies over which the circuit can effectively amplify the input signal. It is calculated as the difference between the upper cutoff frequency ((F_H)) and the lower cutoff frequency ((F_L)). Based on the analysis, the bandwidth of the designed amplifier is approximately **191.095 MHz**, which indicates that the circuit is capable of operating over a wide range of frequencies.
