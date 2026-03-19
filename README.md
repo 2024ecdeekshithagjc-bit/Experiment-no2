@@ -30,8 +30,7 @@ ro = 1 / (λID)
 Av = −gm × Rout
 
 ### CIRCUIT DIAGRAM :
-![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/cs%20amplifier%20with%20load%20resistor.png?raw=true)
-
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/circuit1.png?raw=true)
 CMOS Common Source Amplifier with Active Load
 ### Circuit description :
 This circuit is a Common Source (CS) amplifier implemented using CMOS technology, where an NMOS transistor is used as the main amplifying device and a PMOS transistor acts as an active load.
@@ -209,6 +208,8 @@ Wn = 27.5 µm → Id = 200 µA
 
 ### DC sweap analysis:
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/DC%20sweap%20.png?raw=true)
+### Transient analysis:
+![Image description](
 
 ### AC analysis:
 The **bandwidth** of the amplifier represents the range of frequencies over which the circuit can effectively amplify the input signal. It is calculated as the difference between the upper cutoff frequency ((F_H)) and the lower cutoff frequency ((F_L)). Based on the analysis, the bandwidth of the designed amplifier is approximately **191.095 MHz**, which indicates that the circuit is capable of operating over a wide range of frequencies.
