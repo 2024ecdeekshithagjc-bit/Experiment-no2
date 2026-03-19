@@ -430,8 +430,9 @@ By varying width:
 W1 = 25 µm → Id = 200 µA
 W2 = 34.605 µm → Id = 200 µA
 W3 = 15.79 µm → Id = 200 µA
-3. DC Operating Point:
-![Image description]()
+### 3. DC Operating Point:
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/Dc%20op%202.png?raw=true)
+
 
 
 
