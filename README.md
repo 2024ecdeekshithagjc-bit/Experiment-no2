@@ -254,7 +254,16 @@ These differences occur because theoretical calculations usually consider ideal 
 The graph shows the transient response of a CMOS amplifier, where the green waveform represents the input signal (V_{in}) and the blue waveform represents the output signal (V_{out}). The input is a small sinusoidal signal applied around a DC bias point (approximately 0.8 V), which allows the MOSFET to operate in its active region. As this small AC signal is fed into the gate of the NMOS transistor, it controls the drain current. Variations in this current cause corresponding voltage changes at the output node, resulting in an amplified version of the input signal. The output waveform clearly has a much larger amplitude compared to the input, indicating that the circuit is providing voltage gain. The output is also centered around a higher DC level due to the biasing conditions of the circuit.
 
 From the graph, the input voltage varies approximately between 0.80 V and 0.82 V, giving a peak-to-peak input voltage of about **0.02 V (20 mV)**. The output voltage varies roughly between 1.05 V and 1.32 V, resulting in a peak-to-peak output voltage of about **0.27 V (270 mV)**. This shows that the amplifier increases the signal amplitude significantly while maintaining the sinusoidal shape, which confirms proper linear amplification.
+### Unity Gain Bandwidth Product:
+f(0dB) = 3.066 GHz
 
+UGB = Av × BW
+
+UGB = 12.387 × 191.095 MHz
+
+UGB = 2367.09 MHz
+
+UGB = 2.367 GHz
 ### Inference
 The difference between theoretical and simulated results occurs due to practical MOSFET non-idealities such as channel length modulation, mobility degradation, and parasitic capacitances.
 These non-ideal effects introduce a dominant pole that limits the high-frequency response of the amplifier.
