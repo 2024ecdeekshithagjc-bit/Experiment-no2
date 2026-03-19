@@ -69,23 +69,36 @@ For the NMOS transistor operating in saturation region:
 ID = (1/2) * μn * Cox * (W/L)n * (VGS − VTN)^2
 
 Where:
+Given Specifications:
 
+VDD = 2 V
+
+ID = 200 µA
+
+VOV = 0.25 V
+
+CL = 1 pF
+
+Ln = Lp = 180 nm
+
+P<= 1.2mW
+
+εr = 3.9
+
+ε0 = 8.854 × 10⁻¹² F/m
+
+tox = 4.1 × 10⁻⁹ m
+
+μn = 273.809 cm²/Vs
+
+μp = 115.689 cm²/Vs
 μn = Electron mobility
 Cox = Oxide capacitance per unit area
 (W/L)n = Aspect ratio of NMOS transistor
 VGS = Gate to source voltage
 VTN = Threshold voltage of NMOS Given Specifications:
-VDD = 2 V
-ID = 200 µA
-VOV = 0.25 V
-CL = 1 pF
-Ln = Lp = 180 nm
-P<= 1.5mW
-εr = 3.9
-ε0 = 8.854 × 10⁻¹² F/m
-tox = 4.1 × 10⁻⁹ m
-μn = 273.809 cm²/Vs
-μp = 115.689 cm²/Vs Power constraint:Assuming ID =200µA which satisfy P<=1.5mW (P=V*I ; 2×200×10^−6 ; 400µW<=1.5mW)
+μp = 115.689 cm²/Vs
+Power constraint:Assuming ID =200µA which satisfy P<=1.2mW (P=V*I ; 2×200×10^−6 ; 400µW<=1.2mW)
 
 ### 2. Transconductance (gm)
 The transconductance of the NMOS transistor is given by:
