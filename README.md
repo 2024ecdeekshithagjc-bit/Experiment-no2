@@ -437,7 +437,46 @@ W3 = 15.79 µm → Id = 200 µA
 ### DC sweep:
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/DC%20sweep%202.png?raw=true)
 ### Transient analysis:
-![Image description]()
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/transient%20analysis2.png?raw=true)
+### Simulated Results:
+Vin(p-p) = Vin (max) − Vin (min) = 919.61 mV - 900.39 mV
+
+Vin(p-p) = 19.22 mV
+
+Vout(p-p) = Vout (max) − Vout (min) = 1.03 V - 967.25 mV
+
+Vout(p-p) = 62.75 mV
+
+## Voltage Gain:
+
+Av = ΔVout / ΔVin Av = 62.75/ 19.22 Av = 3.26 V/V
+
+## Gain in decibels:
+
+Gain(dB) = 20 log10(Av) = 20log(3.26) Av(dB) = 10.26 dB
+
+## Theoritical Results:
+gm1 = 2ID / VOV
+
+gm1= (2 × 200 × 10⁻⁶) / 0.25
+
+gm1 = 1.6 × 10⁻³ S
+
+ro = 1 / (λ ID)
+
+ro = 1 / (0.1 × 200 × 10⁻⁶)
+
+ro1 = 50 kΩ
+
+similarly, ro2 = 50 kΩ , ro3 = 50 kΩ
+
+(ro1 || ro2) = 25 kΩ
+
+Av = -gm1 (ro1 || ro2) / (1 + gm1 · ro3)
+
+AV = - 0.5 V/V
+
+Av(dB) = 20 log(Av) = 20 log(0.5) = 6.020 dB
 
 
 
