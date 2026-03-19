@@ -433,7 +433,7 @@ W3 = 15.79 µm → Id = 200 µA
 ### 3. DC Operating Point before modifying the width:
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/Dc%20op%202.png?raw=true)
 ### 4.DC Operating Point after modifying the value of width:
-![Image description]()
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/DC%20operating%20point%202.png?raw=true)
 ### DC sweep:
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/DC%20sweep%202.png?raw=true)
 ### Transient analysis:
