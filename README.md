@@ -208,10 +208,41 @@ Wn = 27.5 µm → Id = 200 µA
 
 ### DC sweap analysis:
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/DC%20sweap%20.png?raw=true)
+### Simulated Results:
+Voltage Gain: Av = ΔVout / ΔVin Av = (1.314-1.136) / (819.64-800)  = 12.34 V/V
+
+Gain in decibels: Gain(dB) = 20 log10(Av) = 20 log10(12.34) = 22.67 dB
+
+
 ### Transient analysis:
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/transient%20analysis1.png?raw=true)
 
-### AC analysis:
+### Theoritical Results:
+Small-signal Voltage Gain: Av = gm × RD = (1.6 × 10⁻³) × (5 × 10³) = 3.70
+
+Gain in decibels: Gain(dB) = 20 log10(Av) = 20log(3.70) = 11.36 dB
+
+gm = 2ID / VOV
+
+gm = (2 × 200 × 10⁻⁶) / 0.25
+
+gm = 1.6 × 10⁻³ S
+
+ro = 1 / (λ ID)
+
+ro = 1 / (0.1 × 200 × 10⁻⁶)
+
+ro = 50 kΩ
+
+(ro1 || ro2) = 25 kΩ
+
+Av = - gm (ro1 || ro2) / (1 + gm RS) Av = - (1.6 × 10⁻³ × 25 × 10³) / (1 + 1.6 × 10⁻³ × 1 × 10³) Av = -40 / 2.6
+
+Av = -15.38 V/V
+
+Av(dB) = 20 log(15.38)
+
+Av(dB) = 23.74 dB
 The **bandwidth** of the amplifier represents the range of frequencies over which the circuit can effectively amplify the input signal. It is calculated as the difference between the upper cutoff frequency ((F_H)) and the lower cutoff frequency ((F_L)). Based on the analysis, the bandwidth of the designed amplifier is approximately **191.095 MHz**, which indicates that the circuit is capable of operating over a wide range of frequencies.
 
 When the theoretical calculations are compared with the simulation results, a small difference can be observed. The **theoretical voltage gain** of the amplifier is calculated to be **15.38 V/V**, whereas the **simulated voltage gain** obtained from the simulation is **14.37 V/V**. Similarly, the **gain in decibels** is theoretically estimated as **23.74 dB**, while the simulated result shows a slightly lower value of **22.612 dB**.
