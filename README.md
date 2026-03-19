@@ -117,6 +117,94 @@ Rs = Source degeneration resistor
 ron = Output resistance of NMOS
 rop = Output resistance of PMOS
 The negative sign indicates phase inversion
+ Output Voltage Selection
+For symmetrical output swing:
+
+Vout = VDD/2 + VRS
+
+Vout = 1 + 0.2
+
+Vout = 1.2 V
+
+5.3: Overdrive Voltage
+Assume:
+
+VOV = 0.25 V VTH = 0.36 V
+
+VOV = VGS - VTH
+
+VGS = VOV + VTH
+
+VGS = 0.25 + 0.36
+
+VGS = 0.61 V
+
+5.4: Gate Voltage
+VG = VGS + ID RS
+
+Assume:
+
+VRS = 0.2 V
+
+VG = 0.61 + 0.2
+
+VG = 0.81 V
+
+5.5: Source Resistor
+RS = VRS / ID
+
+RS = 0.2 /200µ
+
+RS = 1k Ω
+
+5.6: NMOS Width Calculation
+Drain current equation:
+
+ID = (1/2) kn' (W/L) (VOV)^2
+
+Where
+
+kn' = μn Cox
+
+μn = 273.81 cm²/Vs
+
+Cox = εox / tox
+
+εox = 8.854 × 10⁻¹² × 3.9
+
+tox = 4.1 × 10⁻⁹
+
+kn' = 2.306 × 10⁻⁴
+
+Now solving for W:
+
+W = 5 µm
+
+Thus
+
+Wn = 5 µm
+
+5.7: PMOS Gate Bias
+For PMOS: VOV = VSG − |VTP| Assume |VTP| = 0.39 V
+
+VSG = VOV + |VTP|
+
+VSG = 0.25 + 0.39
+
+VSG = 0.64 V
+
+Since: VSG = VS − VG VS = VDD = 2 V
+
+VG = 2 − 0.64 VG = 1.36 V
+
+5.8: PMOS Width Calculation
+Wp = (2 ID L) / (μp Cox (VOV)²)
+
+Wp = 11.82 µm By varying width:
+
+Wp = 34.6 µm → Id = 200 µA
+Wn = 27.5 µm → Id = 200 µA
+### DC operating point
 The **bandwidth** of the amplifier represents the range of frequencies over which the circuit can effectively amplify the input signal. It is calculated as the difference between the upper cutoff frequency ((F_H)) and the lower cutoff frequency ((F_L)). Based on the analysis, the bandwidth of the designed amplifier is approximately **191.095 MHz**, which indicates that the circuit is capable of operating over a wide range of frequencies.
 
 When the theoretical calculations are compared with the simulation results, a small difference can be observed. The **theoretical voltage gain** of the amplifier is calculated to be **15.38 V/V**, whereas the **simulated voltage gain** obtained from the simulation is **12.39 V/V**. Similarly, the **gain in decibels** is theoretically estimated as **23.74 dB**, while the simulated result shows a slightly lower value of **21.86 dB**.
