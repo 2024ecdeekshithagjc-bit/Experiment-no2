@@ -1,16 +1,13 @@
 # Experiment-no2
-### Design the mpliefier confuguration using tsmc in LTSPICE
+### CS amplifier with different configurations:
+### CS amplifier with resistor load:
 ### AIM :
-To design a Common Source (CS) amplifier-configurations using NMOSFET in tsmc 180nm tech.lib in LTspice and to perform DC, Transient and AC analysis as per the given specifications.
-
-1.Common source Amplifier with source degeneration.
-2.Cascode amplifier.
-3.Current mirror loaded common source amplifier.
+Design CS Amplifier using NMOSFET in tsmc 180nm using VDD=2V, P<=1.2mW, C=1pF, Ln=480nm
 
 ### Introduction :
-Analog amplifier circuits are fundamental building blocks in electronic systems. They are used to increase the amplitude of weak electrical signals so that they can be processed by other stages in an electronic system. Amplifiers are widely used in communication systems, signal processing, and integrated circuit (IC) design.
+A Common Source (CS) amplifier with resistor load is one of the most basic and widely used amplifier circuits in analog electronics, especially when working with MOSFETs. the MOSFET is the main device that controls the signal, and the resistor connected at the drain acts as a load that helps convert current changes into voltage changes.In this setup, the input signal is applied to the gate of the MOSFET, the source is usually connected to ground (hence the name “common source”), and a resistor is connected at the drain to the supply voltage. The output is taken from the drain terminal.
 
-In this project, different amplifier configurations are designed and simulated using LTspice, a SPICE-based circuit simulation software developed by Analog Devices. LTspice allows engineers and students to model MOSFET devices and evaluate important parameters such as voltage gain, frequency response, input impedance, output impedance, and power consumption.These circuits are designed using TSMC MOSFET models and analyzed through simulation. The results help in understanding the behavior of CMOS amplifiers and provide practical experience in analog IC design using simulation tools.
+Now, when a small input voltage is given at the gate, it changes the current flowing through the MOSFET. This changing current passes through the drain resistor, which creates a varying voltage across it. As a result, we get an amplified output voltage at the drain.One important thing to notice is that the output signal is inverted compared to the input. That means if the input goes up, the output goes down, and vice versa. This happens because of how the voltage drop across the resistor changes with current.
 
 ### MOSFET Amplifier Fundamentals:
 MOSFET amplifiers are used to increase the amplitude of small input signals.
@@ -32,24 +29,8 @@ ro = 1 / (λID)
 5)Voltage Gain (Av)
 Av = −gm × Rout
 
-### Amplifier Configurations Overview:
-### 1. Source Degenerated Common Source
-Uses a source resistor to introduce negative feedback.
-Advantage: Improves bias stability and linearity.
-Limitation: Reduces voltage gain.
-### 2. Cascode Amplifier
-Combination of Common Source + Common Gate stages.
-Advantage: Provides high output resistance and higher gain.
-Limitation: More complex circuit design.
-
-### 3. Active Load Common Source
-Uses a current mirror or active transistor load instead of a resistor.
-Advantage: Achieves higher gain.
-Limitation: Sensitive to biasing conditions.
-### CONFIGURATION - 1
-
 ### CIRCUIT DIAGRAM :
-![Image description]
+![Image description]()
 
 CMOS Common Source Amplifier with Active Load
 ### Circuit description :
