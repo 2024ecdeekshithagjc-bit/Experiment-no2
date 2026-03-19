@@ -214,7 +214,7 @@ Wn = 27.5 µm → Id = 200 µA
 ### AC analysis:
 The **bandwidth** of the amplifier represents the range of frequencies over which the circuit can effectively amplify the input signal. It is calculated as the difference between the upper cutoff frequency ((F_H)) and the lower cutoff frequency ((F_L)). Based on the analysis, the bandwidth of the designed amplifier is approximately **191.095 MHz**, which indicates that the circuit is capable of operating over a wide range of frequencies.
 
-When the theoretical calculations are compared with the simulation results, a small difference can be observed. The **theoretical voltage gain** of the amplifier is calculated to be **15.38 V/V**, whereas the **simulated voltage gain** obtained from the simulation is **12.39 V/V**. Similarly, the **gain in decibels** is theoretically estimated as **23.74 dB**, while the simulated result shows a slightly lower value of **21.86 dB**.
+When the theoretical calculations are compared with the simulation results, a small difference can be observed. The **theoretical voltage gain** of the amplifier is calculated to be **15.38 V/V**, whereas the **simulated voltage gain** obtained from the simulation is **14.37 V/V**. Similarly, the **gain in decibels** is theoretically estimated as **23.74 dB**, while the simulated result shows a slightly lower value of **22.612 dB**.
 
 These differences occur because theoretical calculations usually consider ideal conditions, whereas simulations include more practical factors such as device parameters, internal resistances, and non-ideal transistor behavior. Overall, the simulated results are reasonably close to the theoretical values, which confirms that the amplifier design works as expected.
 ### Inference
