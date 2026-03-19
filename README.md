@@ -47,57 +47,21 @@ The output voltage (Vout) is taken from the node between M1 and M2. When the inp
 ### Input Signal
 The input voltage is defined as:
 
-SINE(0.8 10m 1000)
+SINE(0.81 10m 1000)
 
 Where:
-
-0.8 V = DC offset
+0.81 V = DC offset
 10 mV = Amplitude of the input signal
 1000 Hz = Frequency of the signal
 ### Circuit Operation
-The input signal is applied to the gate of the NMOS transistor (M2).
-Variations in the input voltage change the gate-to-source voltage (VGS) of M2.
-This variation controls the drain current flowing through M2.
-The PMOS transistor (M1) acts as an active load, providing a nearly constant current and improving voltage gain.
-The output voltage (Vout) is measured at the node between M1 and M2.
-Output Behavior
-When Vin increases, the NMOS conducts more current, causing Vout to decrease.
-When Vin decreases, the NMOS conducts less current, causing Vout to increase.
-This results in an inverted amplified output signal.
+The given circuit operates as a Common Source (CS) amplifier with source degeneration and an active load using CMOS transistors.
+In this configuration, the NMOS transistor (M1) acts as the main amplifying device, while the PMOS transistor (M2) functions as an active load. The circuit is properly biased using DC voltage sources to ensure that both transistors operate in the saturation region, which is necessary for amplification.
+When an input signal is applied to the gate of the NMOS transistor, it causes a variation in the gate-to-source voltage (Vgs). This variation directly affects the drain current (Id) flowing through M1. As the input voltage increases, the drain current increases, and as the input decreases, the drain current decreases.
+The PMOS transistor, acting as a load, converts these current variations into corresponding voltage variations at the output node. Since the PMOS provides a relatively high effective resistance, even small changes in current result in significant changes in output voltage.
 
-### Source Degeneration
-The 1kΩ resistor connected to the source of M2 provides:
+The resistor connected at the source of the NMOS introduces source degeneration, which enhances the stability of the circuit, improves linearity, and reduces distortion by providing negative feedback.
+The output is taken from the common node between M1 and M2. Due to the nature of operation, the circuit produces an inverted output, meaning that an increase in input voltage results in a decrease in output voltage, and vice versa.Thus, the circuit effectively performs voltage amplification with improved gain and stability compared to a simple resistive-load CS amplifier.
 
-Improved linearity
-Bias stability
-Reduced distortion
-### THEORY :
-Circuit Components
-The circuit consists of the following main components:
-
-NMOS transistor acting as the amplifying device
-PMOS transistor acting as the active load
-Source degeneration resistor (Rs)
-Bias voltage (VB) for proper transistor operation
-Output node taken from the drain terminal
-PMOS Active Load
-Instead of using a passive resistor as the load, a PMOS transistor is used as an active load.
-The PMOS transistor provides a higher output resistance compared to a conventional resistor, which helps in increasing the voltage gain of the amplifier.
-
-Using a PMOS transistor as a load also makes the circuit more suitable for integrated circuit (IC) implementation, since large resistors consume significant chip area.
-
-### Source Degeneration
-A source resistor (Rs) is connected to the source of the NMOS transistor.
-This configuration is known as source degeneration.
-
-The resistor introduces negative feedback into the circuit. When the current through the NMOS increases, the voltage drop across Rs also increases, which reduces the effective gate-to-source voltage (Vgs). This helps control the current flowing through the transistor.
-Effects of Source Degeneration
-The source degeneration resistor provides several advantages:
-
-Improves the linearity of the amplifier
-Helps stabilize the operating (bias) point
-Reduces signal distortion
-Slightly reduces the overall voltage gain
 ### Design Calculations :
 ### 1. Drain Current (ID)
 For the NMOS transistor operating in saturation region:
