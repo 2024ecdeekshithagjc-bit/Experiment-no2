@@ -243,6 +243,8 @@ Av = -15.38 V/V
 Av(dB) = 20 log(15.38)
 
 Av(dB) = 23.74 dB
+### AC analysis:
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/AC%20analysis%201.png?raw=true)
 The **bandwidth** of the amplifier represents the range of frequencies over which the circuit can effectively amplify the input signal. It is calculated as the difference between the upper cutoff frequency ((F_H)) and the lower cutoff frequency ((F_L)). Based on the analysis, the bandwidth of the designed amplifier is approximately **191.095 MHz**, which indicates that the circuit is capable of operating over a wide range of frequencies.
 
 When the theoretical calculations are compared with the simulation results, a small difference can be observed. The **theoretical voltage gain** of the amplifier is calculated to be **15.38 V/V**, whereas the **simulated voltage gain** obtained from the simulation is **14.37 V/V**. Similarly, the **gain in decibels** is theoretically estimated as **23.74 dB**, while the simulated result shows a slightly lower value of **22.612 dB**.
