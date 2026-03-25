@@ -659,6 +659,50 @@ W3 = 14.9 µm → Id = 200 µA
 
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/transient%20analysis%203.png?raw=true)
 
+## 5.1 Simulated Results:
+Vin(p-p) = Vin (max) − Vin (min) = 1.22 V - 1.21 V
+
+Vin(p-p) = 0.01 V
+
+Vout(p-p) = Vout (max) − Vout (min) = 1.21 V - 0.869 V
+
+Vout(p-p) = 0.341 V
+
+Voltage Gain:
+
+Av = ΔVout / ΔVin Av = 0.341/ 0.01 Av = 34.1 V/V
+
+Gain in decibels:
+
+Gain(dB) = 20 log10(Av) = 20log(34.1)
+
+Av(dB) = 30.65 dB
+
+## 5.2 Theoritical Results:
+gm1 = 2ID / VOV
+
+gm1= (2 × 200 × 10⁻⁶) / 0.25
+
+gm1 = 1.6 × 10⁻³ S
+
+ro = 1 / (λ ID)
+
+ro = 1 / (0.1 × 200 × 10⁻⁶)
+
+ro1 = 50 kΩ
+
+similarly, ro2 = 50 kΩ
+
+ro3 = 1/gm
+
+(ro1 || ro2) = 25 kΩ
+
+Av = -gm1 (ro1 || ro2) / (1 + gm1 . 1/gm)
+
+AV = -20 V/V
+
+Av(dB) = 20 log(20) = 20 log(0.5) = 26.02 dB
+
 
 
 
