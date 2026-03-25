@@ -478,7 +478,13 @@ AV = - 0.5 V/V
 
 Av(dB) = 20 log(Av) = 20 log(0.5) = 6.020 dB
 
+### Experiment 2C: Diode Connected Amplifier
 
+## 1. Aim:
+Design CS Amplifier using NMOSFET in tsmc 180nm using VDD=2V, P<=1.2mW, C=1pF, Ln=480nm
+
+## 2. Circuit:
+![Image description]()
 
 
 
