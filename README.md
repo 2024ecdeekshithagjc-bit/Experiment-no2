@@ -649,10 +649,12 @@ W3 = 14.9 µm → Id = 200 µA
 
 ## 3. DC Operating Point:
 
-![Image description]()
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/operating%20poind%203.png?raw=true)
 
 4.DC Sweep Analysis:
-Image
+
+![Image description]()
+
 5. Transient Analysis:
 
 
