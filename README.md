@@ -657,7 +657,7 @@ W3 = 14.9 µm → Id = 200 µA
 
 5. Transient Analysis:
 
-![Image description]()
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/transient%20analysis%203.png?raw=true)
 
 
 
