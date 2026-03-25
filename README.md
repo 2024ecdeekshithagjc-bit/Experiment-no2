@@ -657,7 +657,7 @@ W3 = 14.9 µm → Id = 200 µA
 
 5. Transient Analysis:
 
-
+![Image description]()
 
 
 
