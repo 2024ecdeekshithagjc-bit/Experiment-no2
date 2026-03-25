@@ -705,7 +705,47 @@ Av(dB) = 20 log(20) = 20 log(0.5) = 26.02 dB
 
 ## AC analysis:
 
-![Image description]()
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/AC%20analysis%203.png?raw=true)
+
+Voltage Gain: The measured voltage gain of the amplifier is found to be
+
+Av = 25.195 - 3 = 22.195 dB
+
+Cutoff Frequency: The frequency at which the gain drops to the −3 dB level is observed as
+
+Upper cutoff frequency:
+
+fH = 345.989 MHz
+
+Lower cutoff frequency:
+
+fL ≈ 0
+
+Bandwidth:
+
+BW = FH − FL
+
+BW =345.989 MHz
+
+## 7. Gain Bandwidth Product:
+f(0dB) = 6.969 GHz
+
+UGB = Av × BW
+
+UGB = 18.182 × 345.989 MHz
+
+UGB = 6363.49 MHz
+
+UGB = 6.363 GHz
+
+## 8. Result:
+The experimental observations of the Common Source (CS) amplifier show the practical trade-off between voltage gain, circuit stability, and voltage headroom. With a supply voltage of 1 V and a low threshold voltage of 0.25 V, the transistors obtain sufficient overdrive voltage. Because of this, the MOSFETs remain in the saturation region . This helps the amplifier maintain good linear behavior and prevents distortion or clipping in the output signal.
+
+## 9. Validation:
+The obtained results confirm that the amplifier operates within the expected theoretical conditions. Since the transistors stay in the saturation region throughout the signal swing, the circuit maintains stable amplification and proper biasing. The absence of clipping and the consistent output waveform verify that the design parameters, such as supply voltage and device threshold voltage, are suitable for reliable amplifier operation.
+
+## 10. Inference:
+The diode-connected load configuration reduces the overall voltage gain but improves the bandwidth and linearity of the amplifier. This approach is often used in integrated circuit design because large resistors are difficult to implement on a chip. By using an active load, the gain becomes dependent mainly on the transistor dimensions (W/L ratios) rather than precise resistance values, making the circuit performance more predictable.
 
 
  
