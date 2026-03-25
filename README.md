@@ -703,10 +703,9 @@ AV = -20 V/V
 
 Av(dB) = 20 log(20) = 20 log(0.5) = 26.02 dB
 
+## AC analysis:
 
-
-
-
+![Image description]()
 
 
  
