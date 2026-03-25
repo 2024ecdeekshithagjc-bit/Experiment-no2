@@ -653,7 +653,7 @@ W3 = 14.9 µm → Id = 200 µA
 
 4.DC Sweep Analysis:
 
-![Image description]()
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/DC%20sweep%203.png?raw=true)
 
 5. Transient Analysis:
 
