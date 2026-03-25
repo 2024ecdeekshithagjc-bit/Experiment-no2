@@ -484,7 +484,177 @@ Av(dB) = 20 log(Av) = 20 log(0.5) = 6.020 dB
 Design CS Amplifier using NMOSFET in tsmc 180nm using VDD=2V, P<=1.2mW, C=1pF, Ln=480nm
 
 ## 2. Circuit:
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no2/blob/main/circuit%203.png?raw=true)
+
+## DC Analysis:
+Given Specifications:
+
+VDD = 2 V
+
+ID = 200 µA
+
+VOV = 0.25 V
+
+CL = 1 pF
+
+Ln = Lp = 180 nm
+
+P<= 1.2mW
+
+εr = 3.9
+
+ε0 = 8.854 × 10⁻¹² F/m
+
+tox = 4.1 × 10⁻⁹ m
+
+μn = 273.809 cm²/Vs
+
+μp = 115.689 cm²/Vs
+
+2.1 Power constraint:
+Assuming ID =200µA which satisfy P<=1.2mW (P=V*I ; 2×200×10^−6 ; 400µW<=1.2mW)
+
+## 2.2: Output Voltage Selection
+For symmetrical output swing:
+
+Vout = VDD/2
+
+Vout = 2/2
+
+Vout = 1 V
+
+## 2.3 For M1 (NMOS) transistor :
+VOV = 0.25V and VTH = 0.36V
+
+VGS1 = VOV + VTH = 0.25 + 0.36
+
+VGS1 = 0.61V
+
+VS1 = 0.61 V
+
+Vin = VS1 + VGS1
+
+Vin = 0.61 + 0.61
+
+Vin = 1.22 V
+
+so, VG1 = 1.22 V
+
+For M1 to be SATURATION, VGS1 >= VTH
+0.61 V >= 0.36 V
+
+also VDS1 >= VOV
+
+VDS1 = VD1 - VS1 = Vout - VS1 = 1 - 0.61
+
+VDS1 = 0.39 V
+
+Hence, 0.39 V >= 0.25 V
+
+Both the conditions are satisfied, M1 is operating in saturation region.
+
+## 2.4 For M3 (NMOS) transistor:
+VOV = 0.25V, VTH = 0.36V
+
+VG3 = VS1
+
+VGS3 = VOV + VTH = 0.25 + 0.36
+
+VGS3 = 0.61V
+
+so, VG3 = 0.61V
+
+For M3 to be SATURATION,
+
+VGS3 >= VTH
+
+0.61 V >= 0.36 V
+
+also VDS3 >= VOV
+
+VDS = 0.606 V from the simulation
+
+Hence, 0.606 >= 0.25
+
+Both the conditions are satisfied. M3 is operating in SATURATION region
+
+## 2.5 For M2 (PMOS) transistor:
+VOV = 0.25V, VTH = 0.39V
+
+VSG2 = VOV + |VTH| = 0.25 + 0.39 VSG2 = 0.64 V
+
+VG2 = VS2 - VSG2 = 2 - 0.64
+
+VG2 = 1.36 V
+
+so VB1 = 1.36 V
+
+For M2 to be SATURATION,
+
+VSG2 >= |VTH|
+
+0.64 V >= 0.36 V
+
+also VSD2 >= VOV
+
+VSD2 = VDD - Vout
+
+VSD2 = 2 - 1
+
+VSD2 = 1 V
+
+Hence, 1 V >= 0.25 V
+
+Both the conditions are satisfied. M2 is operating in SATURATION region.
+
+## 2.6 Drain current equation for M1 and M3 transistor:
+ID = (1/2) kn' (W/L) (VOV)^2
+
+Where
+
+kn' = μn Cox
+
+μn = 273.81 cm²/Vs
+
+Cox = εox / tox
+
+εox = 8.854 × 10⁻¹² × 3.9
+
+tox = 4.1 × 10⁻⁹
+
+kn' = 2.306 × 10⁻⁴
+
+Now solving for W:
+
+W = 5 µm
+
+Thus
+
+W1 = 5 µm
+
+similarly, W3 = 5 µm
+
+## 2.7 Drain current equation for M2 transistor:
+ID = (1/2) kn' (W/L) (VOV)^2
+
+W2 = 11.82 µm
+
+By varying width:
+
+W1 = 14.8 µm → Id = 200 µA
+
+W2 = 35 µm → Id = 200 µA
+
+W3 = 14.9 µm → Id = 200 µA
+
+## 3. DC Operating Point:
+
 ![Image description]()
+
+4.DC Sweep Analysis:
+Image
+5. Transient Analysis:
+
 
 
 
